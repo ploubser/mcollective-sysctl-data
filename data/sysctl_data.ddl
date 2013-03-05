@@ -6,6 +6,8 @@ metadata    :name        => "sysctl",
             :url         => "http://marionette-collective.org/",
             :timeout     => 1
 
+requires :mcollective => "2.2.1"
+
 dataquery :description => "Sysctl values" do
     input :query,
           :prompt => "Variable Name",
